@@ -18,6 +18,9 @@ datasets = {
 app = dash.Dash(__name__)
 app.title = "Simple Demo Dash App"
 
+# Expose the server for Gunicorn/Azure
+server = app.server
+
 app.layout = html.Div([
     html.H1("Simple Dash Line Chart Demo"),
     
